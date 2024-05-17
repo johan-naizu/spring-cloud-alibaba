@@ -22,10 +22,16 @@ With Spring Cloud Alibaba, you only need to add some annotations and a small amo
 * **Distributed configuration**: Support for externalized configuration in a distributed system, auto refresh when configuration changes.
 * **Event-driven**: Support for building highly scalable event-driven microservices connected with shared messaging systems.
 * **Distributed Transaction**: Support for distributed transaction solution with high performance and ease of use.
+* **RPC communication**: Extend service-to-service calls using Apache Dubbo RPC.
 * **Alibaba Cloud Object Storage**: Massive, secure, low-cost, and highly reliable cloud storage services. Support for storing and accessing any type of data in any application, anytime, anywhere.
 * **Alibaba Cloud SchedulerX**: Accurate, highly reliable, and highly available scheduled job scheduling services with response time within seconds.
-* **Alibaba Cloud SMS**: A messaging service that covers the globe, Alibaba SMS provides convenient, efficient, and intelligent communication capabilities that help businesses quickly contact their customers.
-
+* **Alibaba Cloud SMS**: A messaging service that covers the globe, Alibaba SMS provides convenient, efficient, and intelligent communication capabilities that help businesses quickly contact their customersi
+* **Circuit Breaker**: Provides a robust circuit breaker mechanism to handle service failures gracefully.
+* **Sentinel**: Integrates Sentinel for fault tolerance, rate limiting, and system stability.
+* **Nacos**: Service discovery and configuration management.
+* **RocketMQ**: High-performance distributed messaging and streaming platform.
+* **Seata**: Simplifies distributed transactions for microservices.
+* 
 For more features, please refer to [Roadmap](https://github.com/alibaba/spring-cloud-alibaba/blob/2023.x/Roadmap.md).
 
 In addition to the above-mentioned features, for the needs of enterprise users' scenarios, [Microservices Engine (MSE)](https://www.aliyun.com/product/aliware/mse?spm=github.spring.com.topbar) of Spring Cloud Alibaba's enterprise version provides an enterprise-level microservices governance center, which includes more powerful governance capabilities such as Grayscale Release, Service Warm-up, Lossless Online and Offline and Outlier Ejection. At the same time, it also provides a variety of products and solutions such as enterprise-level Nacos registration / configuration center, enterprise-level cloud native gateway.

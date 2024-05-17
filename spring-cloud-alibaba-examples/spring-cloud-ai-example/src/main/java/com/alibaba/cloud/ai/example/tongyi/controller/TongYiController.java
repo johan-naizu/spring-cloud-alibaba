@@ -16,6 +16,7 @@
 
 package com.alibaba.cloud.ai.example.tongyi.controller;
 
+import java.util.List;
 import java.util.Map;
 
 import com.alibaba.cloud.ai.example.tongyi.models.ActorsFilms;
@@ -135,6 +136,17 @@ public class TongYiController {
 			defaultValue = "你好，Spring Cloud Alibaba AI 框架！") String prompt) {
 
 		return tongYiAudioService.genAudio(prompt);
+	}
+
+	@Autowired
+	@Qualifier("tongYiTextEmbeddingServiceImpl")
+	private TongYiService tongYiTextEmbeddingService;
+
+	@GetMapping("/textEmbedding")
+	public List<Double> textEmbedding(@RequestParam(value = "text",
+			defaultValue = "Spring Cloud Alibaba AI 框架！") String text) {
+
+		return tongYiTextEmbeddingService.textEmbedding(text);
 	}
 
 }

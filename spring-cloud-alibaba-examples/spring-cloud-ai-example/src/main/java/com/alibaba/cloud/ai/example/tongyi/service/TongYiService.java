@@ -16,12 +16,14 @@
 
 package com.alibaba.cloud.ai.example.tongyi.service;
 
+import java.util.List;
 import java.util.Map;
 
 import com.alibaba.cloud.ai.example.tongyi.models.ActorsFilms;
 import com.alibaba.cloud.ai.example.tongyi.models.Completion;
 
 import org.springframework.ai.chat.messages.AssistantMessage;
+import org.springframework.ai.embedding.EmbeddingResponse;
 import org.springframework.ai.image.ImageResponse;
 
 /**
@@ -97,5 +99,12 @@ public interface TongYiService {
 	 * @return ByteBuffer object.
 	 */
 	String genAudio(String text);
+
+	/**
+	 * TongYI LLM Text embedding.
+	 * @param text input text.
+	 * @return {@link EmbeddingResponse}
+	 */
+	List<Double> textEmbedding(String text);
 
 }
